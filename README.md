@@ -1,24 +1,19 @@
 
 # STUDENT MANAGEMENT SYSTEM USING FLASK AND MONGO DB
 
-  
-
 ## Introduction
 
   
 
 This project contains api required for performing crud operations related to student management such as student basic information, students academic records, subject details ,teacher details etc along with validation for request data.
 
-  
 
 ---
-
-  
+ 
 
 ## Requirements
 
   
-
 This projects requires **flask** maintaining backend routes , **mongo db** for database, **pymongo** for performing python mongo connectivity , **flak-marshmallow** for validating input requrest data for the routes.
 
   
@@ -26,56 +21,54 @@ This projects requires **flask** maintaining backend routes , **mongo db** for d
 ---
 
   
-
 ## Modules
 
   
-
 ### 1. Student CRUD
 
 <br>
 
 This module contain the following routes:
 
-<br><br>
+<br>
 
 **/student**
 
-<br><br>
+<br>
 
 Using **POST** method to this route we can insert student records and the records will be inserted only if the request data satisfies the required format, pass array of inputs with
 
 **student_records** key and academic_year with **academic_year** as key.
 
-<br><br>
+<br> 
 
 Using **GET** method to this route all the student records will be retured as response.
 
-<br><br>
+<br>
 
 **/student/pagination**
 
-<br><br>
+<br>
 
 Using **GET** method to this route and passing **page_no** in request params you can perform pagination.
 
-<br><br>
+<br>
 
 **/student/<string:student_id>**
 
-<br><br>
+<br>
 
 Using **GET** method to this route by passing **student_id** in request URL you can able to retrive a specific student details.
 
-<br><br>
+<br>
 
 Using **PUT** method to this route by passing **student_id** in request URL and form data in json format in request body you can update personl_information of students, data will be updated only if satisfied the validition criteria for student records.
 
-<br><br>
+<br>
 
 Using **DELETE** method to this route by passing **student_id** in request URL you can delete that particular student data from the database
 
-<br><br>
+<br>
 
 **Sample format for student records**
 
